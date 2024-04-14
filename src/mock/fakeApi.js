@@ -1,6 +1,6 @@
 const productos = [
     {
-        id:'1',
+        id:'01',
         name:'Cera para el Pelo Natural - Fijación Media ',
         stock:5,
         price:628,
@@ -9,7 +9,7 @@ const productos = [
         category:'cera'
     },
     {
-        id:'2',
+        id:'02',
         name:'Cera para el Pelo Strong - Fijación Fuerte ',
         stock:5,
         price:628,
@@ -18,7 +18,7 @@ const productos = [
         category:'cera'
     },
     {
-        id:'3',
+        id:'03',
         name:'Cera para el pelo Mate - Fijación Media',
         stock:5,
         price:628,
@@ -27,7 +27,7 @@ const productos = [
         category:'cera'
     },
     {   
-        id:'4',
+        id:'04',
         name:'Densify - Champú Anticaída y Redensificante',
         stock:5,
         price:610,
@@ -36,7 +36,7 @@ const productos = [
         category:'shampoo'
     },
     {
-        id:'5',
+        id:'05',
         name:'Grey - Champú Matizador para Cabellos Blancos y Rubios',
         stock:6,
         price:610,
@@ -45,7 +45,7 @@ const productos = [
         category:'shampoo'
     },
     {
-        id:'6',
+        id:'06',
         name:'Clear - Champú para Cabellos Grasos',
         stock:3,
         price:610,
@@ -54,7 +54,7 @@ const productos = [
         category:'shampoo'
     },
     {
-        id:'7',
+        id:'07',
         name:'Tinte para Barba y Bigote | Champú de Color - Negro',
         stock:2,
         price:567,
@@ -63,7 +63,7 @@ const productos = [
         category:'tintas'  
     },
     {
-        id:'8 ',
+        id:'08',
         name:'Pack Tinte para Barba y Bigote Gris | Tinte+Bowl+Paletina',
         stock:1,
         price:711,
@@ -86,16 +86,16 @@ export const getProducts =() => {
         },2000)
     })
 }
-export const getOneProduct =(id) => {
+export const getOneProduct = (id) => {
     return new Promise ((resolve, reject)=>{
         let error = false
         setTimeout(()=>{
             if(error){
-                reject('Ocurrio un error inesperado')
+                reject('Producto no encontrado.')
             }else{
-                let product= productos.find((item)=> item.id === id)
-                resolve(product)
+                let OneProduct = productos.find((item)=> item.id === id)
+                resolve(OneProduct)
             }
-        },2000)
+        },2500)
     })    
 }

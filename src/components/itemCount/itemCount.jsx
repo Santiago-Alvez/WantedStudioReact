@@ -2,7 +2,7 @@ import React from "react"
 import { useState } from "react"
 
 const ItemCount = ({stock}) =>{
-    const [count,setCount]= useState()
+    const [count,setCount]= useState(0)
 
     const onAdd = () =>{
         console.log('Compraste el producto')
@@ -24,7 +24,7 @@ const ItemCount = ({stock}) =>{
         <>
         <div className="d-flex justify-content-center">
         <button className="btn btn-danger" onClick={restar}>-</button>
-            <span className="btn"></span>
+            <span className="btn">{count}</span>
             <button className="btn btn-success" onClick={sumar}>+</button>
         </div>
         <button className="btn btn-primary" disabled={stock === 0 || count === 0} onClick={onAdd}>Comprar</button>

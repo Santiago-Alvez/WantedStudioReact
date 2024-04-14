@@ -3,8 +3,8 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import CartWidget from '../cartWidget/CartWidget';
-import { NavLink } from 'react-bootstrap';
-
+import { NavLink } from 'react-router-dom';
+ 
 function NavBarComp() {
   return (
     <Navbar expand="lg" className="fst-italic">
