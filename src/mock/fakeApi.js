@@ -1,7 +1,7 @@
 const productos = [
     {
         id:'01',
-        name:'Cera para el Pelo Natural - Fijación Media ',
+        name:'Cera para el Pelo Natural - Fijación Media',
         stock:5,
         price:628,
         description:'Cera para el pelo de acabado natural que aporta un ligero brillo, con su fijación media permite el movimiento del cabello, para aquellos peinados que quieres que queden poco marcados. Se elimina fácilmente con agua. No deja residuos.',
@@ -10,7 +10,7 @@ const productos = [
     },
     {
         id:'02',
-        name:'Cera para el Pelo Strong - Fijación Fuerte ',
+        name:'Cera para el Pelo Strong - Fijación Fuerte',
         stock:5,
         price:628,
         description:'Cera de alta fijación y acabado brillante. Se puede aplicar tanto en cabello seco como húmedo. Se disuelve en el agua, por lo que se elimina fácilmente sin dejar residuos.',
@@ -19,7 +19,7 @@ const productos = [
     },
     {
         id:'03',
-        name:'Cera para el pelo Mate - Fijación Media',
+        name:'Cera para el pelo Mate - Fijación Media.',
         stock:5,
         price:628,
         description:'Cera de peinar para un acabado total mate, sin brillos. Fijación Media que permite controlar tus peinados, sin perder la flexibilidad del cabello. Se elimina fácilmente del pelo con agua y no deja residuos en el pelo.',

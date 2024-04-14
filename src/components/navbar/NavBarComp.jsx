@@ -20,9 +20,7 @@ function NavBarComp() {
               <NavDropdown.Item as={NavLink} to='/category/shampoo'>Shampoo </NavDropdown.Item>
               <NavDropdown.Item as={NavLink} to='/category/tintas'>Tintas</NavDropdown.Item>
               <NavDropdown.Divider />
-              <NavDropdown.Item href="#action/3.4">
-                Ofertas
-              </NavDropdown.Item>
+              <NavDropdown.Item as={NavLink} to='/category/ofertas'>Ofertas</NavDropdown.Item>
             </NavDropdown>
           </Nav>
           <CartWidget counter={10}/>
